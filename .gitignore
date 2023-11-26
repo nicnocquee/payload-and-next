@@ -32,3 +32,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
