@@ -2,9 +2,9 @@
   "name": "next-with-payload",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node -r dotenv/config ./node_modules/.bin/next",
+    "build": "node -r dotenv/config ./node_modules/.bin/next build",
+    "start": "node -r dotenv/config ./node_modules/.bin/next start",
     "lint": "next lint",
     "payload": "cross-env PAYLOAD_CONFIG_PATH=payload/payload.config.ts payload"
   },
@@ -12,6 +12,7 @@
     "@payloadcms/db-postgres": "^0.1.13",
     "@payloadcms/next-payload": "^0.1.9",
     "@payloadcms/richtext-slate": "^1.1.0",
+    "dotenv": "^16.3.1",
     "drizzle-orm": "^0.29.0",
     "next": "14.0.2",
     "payload": "^2.1.1",
