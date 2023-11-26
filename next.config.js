@@ -15,7 +15,7 @@ module.exports = withPayload(
     configPath: path.resolve(__dirname, "./payload/payload.config.ts"),
 
     // Point to custom Payload CSS (optional)
-    cssPath: path.resolve(__dirname, "./css/my-custom-payload-styles.css"),
+    // cssPath: path.resolve(__dirname, "./css/my-custom-payload-styles.css"),
 
     // Point to your exported, initialized Payload instance (optional, default shown below`)
     payloadPath: path.resolve(process.cwd(), "./payload/payloadClient.ts"),
